@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы исходного кода\winapi">
+      <UniqueIdentifier>{cf270fe2-38d0-417e-9612-f86d01801fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\x86">
+      <UniqueIdentifier>{27c60b22-db84-459b-baef-2e55b738caa9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="memory.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="crash.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="export.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="threading.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="file.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\winapi\mprotect_flags.hpp">
+      <Filter>Файлы исходного кода\winapi</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpp\winapi\memory_alloc.cpp">
+      <Filter>Файлы исходного кода\winapi</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\x86\memory_paging.cpp">
+      <Filter>Файлы исходного кода\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\winapi\crash.cpp">
+      <Filter>Файлы исходного кода\winapi</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\winapi\file.cpp">
+      <Filter>Файлы исходного кода\winapi</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\winapi\threading.cpp">
+      <Filter>Файлы исходного кода\winapi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

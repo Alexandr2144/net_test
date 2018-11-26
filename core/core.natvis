@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="Data::Plain&lt;*&gt;">
+    <DisplayString>{ *($T1*)bytes }</DisplayString>
+    <Expand>
+      <Item Name="[value]" ExcludeView="simple">*($T1*)bytes</Item>
+    </Expand>
+  </Type>
+
+  <Type Name="Data::Array&lt;*&gt;">
+    <DisplayString>{{ size={end - begin} }}</DisplayString>
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">end - begin</Item>
+      <ArrayItems>
+        <Size>end - begin</Size>
+        <ValuePointer>begin</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+  <Type Name="Data::String">
+    <DisplayString>{begin,[end - begin]na}</DisplayString>
+    <StringView>begin,[end - begin]na</StringView>
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">end - begin</Item>
+      <Item Name="[str]" ExcludeView="simple">begin,[end - begin]na</Item>
+    </Expand>
+  </Type>
+
+  <Type Name="Memory::RaStack&lt;*&gt;">
+    <DisplayString>{{ size={m_stack.m_top} }}</DisplayString>
+    <Expand>
+      <ArrayItems>
+        <Size>m_stack.m_top</Size>
+        <ValuePointer>($T1*) m_region.memory.begin</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+  <Type Name="Memory::RaPool&lt;*&gt;">
+    <DisplayString>{{ size={ m_buffer.m_totalSize / sizeof($T1) }, free={ m_free } }}</DisplayString>
+    <Expand>
+      <ArrayItems>
+        <Size>m_buffer.m_totalSize / sizeof($T1)</Size>
+        <ValuePointer>($T1*) m_buffer.memory.begin</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+  <Type Name="Data::CHashMap&lt;*,*&gt;::Row">
+    <DisplayString>{{ key={key}, val={value} }}</DisplayString>
+    <Expand>
+      <Item Name="[hash]">hash</Item>
+      <Item Name="[key]">key</Item>
+      <Item Name="[val]">value</Item>
+    </Expand>
+  </Type>
+
+  <Type Name="Data::HashMap&lt;*,*&gt;">
+    <DisplayString>{ storage }</DisplayString>
+    <Expand>
+      <ArrayItems>
+        <Size>storage.m_stack.m_top</Size>
+        <ValuePointer>(Row*) storage.m_region.memory.begin</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>

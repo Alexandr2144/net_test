@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{1e09a4ad-e3f4-4f7b-af38-3f3e47340650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="data\Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{48e30800-96e3-4a71-bccc-91d639c4c5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\Заголовочные файлы">
+      <UniqueIdentifier>{af815e2e-561d-4de8-8934-1b8f14b89afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\Файлы исходного кода">
+      <UniqueIdentifier>{c3e4f179-e5df-4904-9843-928139f4d4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{72c49805-0592-42e5-ba7e-9d8e367e25f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\Файлы исходного кода">
+      <UniqueIdentifier>{34d4817a-5c08-4e81-8927-5d084b46f615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\Заголовочные файлы">
+      <UniqueIdentifier>{95ff8e95-e21d-4d52-a743-c100423b5c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{b0534159-0ae3-4c53-89c5-6bee6f012dc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory\Файлы исходного кода">
+      <UniqueIdentifier>{3f16e64c-df4a-4dd4-989b-57e26748f332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory\Заголовочные файлы">
+      <UniqueIdentifier>{5ce92aa7-66eb-4fb4-8088-1a3da81e9093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filesystem">
+      <UniqueIdentifier>{4357390d-10cd-4cac-b342-0c08b3506c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filesystem\Файлы исходного кода">
+      <UniqueIdentifier>{048d3b0b-55e7-4244-a4b4-a9ba6b02369c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filesystem\Заголовочные файлы">
+      <UniqueIdentifier>{b60d5e1f-b7ea-48d3-b1a8-0d3b940f8e23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data\array.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="data\hash_index.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="data\hash_map.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="data\name_tree.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="data\pointers.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="data\string.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="data\hpp\array.hpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="data\hpp\hash_map.hpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="data\hpp\pointers.hpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="math\common.h">
+      <Filter>math\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="math\hpp\common.hpp">
+      <Filter>math\Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\common.h">
+      <Filter>tools\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\logger.h">
+      <Filter>tools\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\stream.h">
+      <Filter>tools\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="data\type_traits.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\common.h">
+      <Filter>memory\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\plain.h">
+      <Filter>memory\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\hpp\common.hpp">
+      <Filter>memory\Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\string.h">
+      <Filter>memory\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\common.h">
+      <Filter>filesystem\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\containers.h">
+      <Filter>memory\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\hpp\containers.hpp">
+      <Filter>memory\Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="data\threading.h">
+      <Filter>data\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\buddy_heap.h">
+      <Filter>memory\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\dlmalloc.h">
+      <Filter>memory\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\utils.h">
+      <Filter>tools\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\hpp\utils.hpp">
+      <Filter>tools\Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\utils.h">
+      <Filter>filesystem\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\event.h">
+      <Filter>tools\Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\hpp\event.hpp">
+      <Filter>tools\Файлы исходного кода</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="data\cpp\array.cpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="data\cpp\hash_index.cpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="data\cpp\name_tree.cpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="data\cpp\string.cpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="math\cpp\common.cpp">
+      <Filter>math\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\cpp\logger.cpp">
+      <Filter>tools\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\cpp\plain.cpp">
+      <Filter>memory\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\cpp\mem_common.cpp">
+      <Filter>memory\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\cpp\mem_string.cpp">
+      <Filter>memory\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\src\fs_common.cpp">
+      <Filter>filesystem\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="data\cpp\threading.cpp">
+      <Filter>data\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\cpp\buddy_heap.cpp">
+      <Filter>memory\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\cpp\dlmalloc.cpp">
+      <Filter>memory\Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\src\utils.cpp">
+      <Filter>filesystem\Файлы исходного кода</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="core.natvis" />
+  </ItemGroup>
+</Project>
